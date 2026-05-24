@@ -1,0 +1,23 @@
+city_selection_task:
+  description: >
+    Review the context you got and select the best city of {country} for a trip based on various factors such as weather, attractions, prices for date {current_date} and number of days {number_of_days}.
+     Make sure to consider all relevant factors and provide a well-reasoned recommendation.
+  expected_output: >
+    A recommendation for the best city in {country} for a trip, along with a detailed explanation of the factors considered and the reasoning behind the recommendation.
+  agent: city_selection_agent
+
+local_expert_task:
+  description: >
+    Review the context you got and provide detailed information about the city, including attractions, local culture, and hidden gems for date {current_date} and number of days {number_of_days}.
+    Make sure to cover a wide range of topics to give a comprehensive overview of the city.
+  expected_output: >
+    A comprehensive overview of the city, including attractions, local culture, and hidden gems.
+  agent: local_expert_agent
+
+travel_concierge_task:
+  description: >
+    Review the context you got and create a personalized travel itinerary for a trip to the city in {country} for date {current_date} and number of days {number_of_days}.
+    The itinerary should include activities, dining, and accommodations.
+  expected_output: >
+    A detailed travel itinerary for a trip to the city, including activities, dining, and accommodations
+  agent: travel_concierge_agent
