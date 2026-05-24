@@ -22,28 +22,26 @@ An intelligent multi-agent AI travel planning system built using **CrewAI**, **S
 
 Replace with screenshot:
 
-```md
+
 <img width="1845" height="890" alt="image" src="https://github.com/user-attachments/assets/9d0aba18-390a-476c-8370-f07f33b583dc" />
 
-```
 
 ---
 
 ## 🤖 Agent Workflow Section
 
-```md
+
 <img width="1869" height="882" alt="image" src="https://github.com/user-attachments/assets/07ef706b-0020-4780-86fa-fd3608f86599" />
 
-```
+
 
 ---
 
 ## 🌍 Generated Travel Plan
 
-```md
+
 <img width="1869" height="889" alt="image" src="https://github.com/user-attachments/assets/815d30c3-4365-49e3-baac-efe25ecc35bd" />
 
-```
 
 ---
 
