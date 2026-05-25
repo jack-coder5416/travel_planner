@@ -6,12 +6,12 @@ from crewai.tools import BaseTool
 from crewai import Agent, Task, LLM
 
 from unstructured.partition.html import partition_html
-
+import streamlit as st
 
 llm_client = LLM(
     model = 'openrouter/openrouter/free',
     base_url = "https://openrouter.ai/api/v1",
-    api_key = os.getenv('OPENAI_API_KEY')
+    api_key = st.secrets['OPENAI_API_KEY']
 )
 
 class ScrapeWebsiteTool(BaseTool):
@@ -26,7 +26,7 @@ class ScrapeWebsiteTool(BaseTool):
 
         url = (
             f"https://chrome.browserless.io/content"
-            f"?token={os.environ['BROWSERLESS_API_KEY']}"
+            f"?token={st.secrets['BROWSERLESS_API_KEY']}"
         )
 
         payload = json.dumps({

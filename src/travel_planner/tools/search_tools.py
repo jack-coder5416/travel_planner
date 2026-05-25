@@ -2,7 +2,7 @@ import os
 import requests
 
 from crewai.tools import BaseTool
-
+import streamlit as st
 
 class SearchInternetTool(BaseTool):
 
@@ -22,7 +22,7 @@ class SearchInternetTool(BaseTool):
         }
 
         headers = {
-            "X-API-KEY": os.environ["SERPER_API_KEY"],
+            "X-API-KEY": st.secrets["SERPER_API_KEY"],
             "Content-Type": "application/json"
         }
 

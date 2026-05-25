@@ -6,6 +6,7 @@ from .tools.calculator_tools import CalculatorTool
 from .tools.search_tools import SearchInternetTool
 
 import os
+import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -13,7 +14,7 @@ load_dotenv()
 llm_client = LLM(
     model = 'openrouter/openrouter/free',
     base_url = "https://openrouter.ai/api/v1",
-    api_key = os.getenv('OPENAI_API_KEY')
+    api_key = st.secrets['OPENAI_API_KEY']
 )
 
 @CrewBase
